@@ -7,8 +7,8 @@ sound. Kindly supported by [Quantum Social Lab](https://quantumsociallab.de/).
 ## Installation
 
 Proton3 is currently under development and not yet available on PyPI. To install
-the latest version, we recommend pulling the latest version, creating a fresh
-python environment and run the following command in the root directory:
+the latest version, we recommend cloning the repository, create a fresh
+python virtual environment and run the following command in the root directory:
 
 ```bash
 pip install . -e
