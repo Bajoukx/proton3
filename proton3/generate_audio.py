@@ -4,7 +4,7 @@ from absl import app
 from absl import flags
 from absl import logging
 
-import proton3
+from proton3.one_dimensional import potentials, solver
 
 FLAGS = flags.FLAGS
 
@@ -19,9 +19,9 @@ flags.DEFINE_integer('state_number', 0, 'The state number of the output.')
 
 def main(_):
     """"Generates audio with the proton3 package."""
-    potential = proton3.potentials.quantum_barrier(0.5, 1, FLAGS.x_start, FLAGS.x_end, FLAGS.steps)
+    potential = potentials.quantum_barrier(0.5, 1, FLAGS.x_start, FLAGS.x_end, FLAGS.steps)
 
-    hamiltonian = proton3.waveforms.solve(potential)
+    hamiltonian = solver.solve(potential)
     print(hamiltonian)
 
 if __name__ == '__main__':

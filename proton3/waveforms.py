@@ -30,22 +30,3 @@ def analytical_quantum_oscillator(state_number: int,
             feasible_vector, state_number)
 
     return first_term * second_term * third_term
-
-
-def solve(potential):
-    """Solves the schrodinger equation for a given potential.
-
-    Args:
-        potential: The potential function.
-    """
-    diagonal_potential = torch.diag(potential)
-
-    potential_size = len(potential)
-    ones = torch.ones_like(potential_size -1)
-    super_diagonal = torch.diag(ones, diagonal=1)
-    sub_diagonal = torch.ones_like(ones, diagonal=1)
-    diagonal= torch.diag(ones - 3)
-
-    hamiltonian = diagonal_potential + (diagonal + super_diagonal + sub_diagonal)
-
-    return hamiltonian
