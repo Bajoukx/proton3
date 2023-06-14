@@ -19,11 +19,10 @@ pip install . -e
 Currently the supported potentials used to generate sound are:
 
 - Quantum Harmonic Oscillator (One Dimensional)
+- Quantum Harmonic Oscillator (Two Dimensional)
+- Quantum Barrier (One Dimensional)
 
 In the future, we plan to support:
 
 - Double Square Well
-- Quantum Barrier
 - Hydrogen Atom
-
-Consider the ones used [here](https://www.osscar.org/courses/quantum_mechanics.html).
