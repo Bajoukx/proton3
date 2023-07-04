@@ -3,7 +3,7 @@
 from setuptools import setup
 
 REQUIRED_PACKAGES = [
-    'absl-py', 'pylint', 'yapf', 'numpy', 'qmsolve[with_mayavi]'
+    'absl-py', 'pylint', 'yapf', 'numpy', 'qmsolve[with_mayavi]', 'pydub'
 ]
 
 setup(name='proton3',
