@@ -24,11 +24,12 @@ def harmonic_oscillator(x_size=512, n_states=30):
     return eigenstates
 
 
-def quantum_barrier(barrier_start=1,  # pylint: disable=unused-argument
-                    barrier_end=1.1,  # pylint: disable=unused-argument
-                    barrier_height=1,  # pylint: disable=unused-argument
-                    x_size=512,
-                    n_states=30):
+def quantum_barrier(
+        barrier_start=1,  # pylint: disable=unused-argument
+        barrier_end=1.1,  # pylint: disable=unused-argument
+        barrier_height=1,  # pylint: disable=unused-argument
+        x_size=512,
+        n_states=30):
     """Returns the eigenstates of the harmonic oscillator."""
 
     potential = partial(barriers.quantum_barrier_1d,

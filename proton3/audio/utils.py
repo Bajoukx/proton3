@@ -10,6 +10,7 @@ def read_wav_as_bytes(file_path):
     audio_bytes = audio_file.read()
     return audio_bytes
 
+
 def get_waferform(waveform_name):
     """Returns a waveform tensor."""
     if waveform_name == 'free_particle_1d':

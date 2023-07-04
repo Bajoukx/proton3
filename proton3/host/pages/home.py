@@ -7,8 +7,7 @@ import streamlit as st
 def main(_):
     st.set_page_config(page_title="Proton3")
     st.write("Welcome to proton3!")
-    st.markdown(
-        """
+    st.markdown("""
         With proton3, we aim to create audio oscillators based on simulations
         based on quantum particles. Quantum simulations can be very
         computationally expensive when done on a modern computer, so we are
@@ -40,8 +39,7 @@ def main(_):
         A really good book to learn more about the schrödinger equation is [A Student's Guide to the Schrödinger Equation
         ](
         https://doi.org/10.1017/9781108876841).
-        """
-    )
+        """)
 
 
 if __name__ == "__main__":

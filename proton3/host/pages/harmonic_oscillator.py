@@ -5,10 +5,9 @@ import streamlit as st
 
 from proton3.audio import utils
 
+
 def main(_):
-    st.set_page_config(
-        page_title="Harmonic Oscillator Potential"
-        )
+    st.set_page_config(page_title="Harmonic Oscillator Potential")
 
     st.write("In development...")
 
