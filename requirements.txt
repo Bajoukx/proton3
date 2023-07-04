@@ -1,0 +1,8 @@
+absl-py
+pylint
+yapf
+numpy
+qmsolve[with_mayavi]
+pydub
+streamlit
+st-pages
