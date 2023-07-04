@@ -7,8 +7,7 @@ from absl import flags
 from absl import logging
 
 from proton3.audio import file_generator
-from proton3.systems import one_dimensional
-from proton3.systems import two_dimensional
+from proton3.audio import utils
 
 FLAGS = flags.FLAGS
 
@@ -25,21 +24,10 @@ flags.DEFINE_string('waveform', 'quantum_oscillator_1d',
                     'Type of waveform to generate.')
 
 
-def get_waferform(waveform_name):
-    """Returns a waveform tensor."""
-    if waveform_name == 'quantum_oscillator_1d':
-        return one_dimensional.harmonic_oscillator()
-    if waveform_name == 'quantum_barrier_1d':
-        return one_dimensional.quantum_barrier()
-    if waveform_name == 'quantum_oscillator_2d':
-        return two_dimensional.harmonic_oscillator()
-    raise ValueError('Unknown waveform: ' + waveform_name)
-
-
 def main(_):
     """Generates a waveform and saves it to a file."""
 
-    waveform = get_waferform(FLAGS.waveform).array[FLAGS.eigenstate]
+    waveform = utils.get_waferform(FLAGS.waveform).array[FLAGS.eigenstate]
 
     file_name = FLAGS.waveform + '_' + str(FLAGS.eigenstate)
     file_path = os.path.join('audio_files', FLAGS.file_path, file_name)
