@@ -6,4 +6,4 @@ qmsolve[with_mayavi]
 pydub
 streamlit
 st-pages
-git+https://github.com/Bajoukx/proton3.git@main
+git+https://github.com/Bajoukx/proton3.git@setup
