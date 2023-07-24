@@ -30,7 +30,7 @@ def main(_):
     waveform = utils.get_waferform(FLAGS.waveform).array[FLAGS.eigenstate]
 
     file_name = FLAGS.waveform + '_' + str(FLAGS.eigenstate)
-    file_path = os.path.join('audio/files', FLAGS.file_path, file_name)
+    file_path = os.path.join('audio', 'files', FLAGS.file_path, file_name)
 
     file_generator.generate_wav(waveform, file_path, FLAGS.sampling_frequency,
                                 FLAGS.scale_factor)
