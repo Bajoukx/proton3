@@ -4,6 +4,14 @@ Atomic Units are a system of units where an electron rest mass, the
 elementary charge, the reduced Planck's constant and the Coulomb force constant
 are all equal to 1.
 
+This variables follow the constants defined by qmsolve at
+qmsolve/util/constants.py. The change of variable naming is useful in terms of
+code readability. The following conversion is made between proton3 and qmsolve:
+
+AMSTRONG = Å
+ELECTRONVOLT = eV
+FEMTOSECOND = fs = femtoseconds
+
 For more information see:
 https://chem.libretexts.org/Courses/Pacific_Union_College/Quantum_Chemistry/08%3A_Multielectron_Atoms/8.01%3A_Atomic_and_Molecular_Calculations_are_Expressed_in_Atomic_Units
 """
