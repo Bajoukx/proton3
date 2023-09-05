@@ -10,7 +10,8 @@ def main(_):
             st_pages.Page('proton3/host/pages/home.py', 'ProTon3'),
             st_pages.Section(name='One Dimensional Systems'),
             st_pages.Page('proton3/host/pages/free_particle.py', 'Free Particle'),
-            st_pages.Page('proton3/host/pages/harmonic_oscillator.py', 'Harmonic Oscillator')
+            st_pages.Page('proton3/host/pages/harmonic_oscillator.py', 'Harmonic Oscillator'),
+            st_pages.Page('proton3/host/pages/test_page.py', 'Test Page')
         ]
     )
     st_pages.add_indentation()
