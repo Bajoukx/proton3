@@ -6,6 +6,7 @@ from proton3.systems import two_dimensional
 
 def read_wav_as_bytes(file_path):
     """Reads a wav file and returns it as bytes."""
+    # R1732: Consider using 'with' for resource-allocating operations
     audio_file = open(file_path, 'rb')
     audio_bytes = audio_file.read()
     return audio_bytes
@@ -19,6 +20,8 @@ def get_waferform(waveform_name):
         return one_dimensional.harmonic_oscillator()
     if waveform_name == 'quantum_barrier_1d':
         return one_dimensional.quantum_barrier()
+    if waveform_name == 'hydrogen_atom_1d':
+        return one_dimensional.hydrogen_atom()
     if waveform_name == 'quantum_oscillator_2d':
         return two_dimensional.harmonic_oscillator()
     raise ValueError('Unknown waveform: ' + waveform_name)

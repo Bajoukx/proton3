@@ -1,11 +1,11 @@
 """Oscillator potentials for the Schrödinger equation."""
 
-from proton3 import constants
+from proton3.constants import atomic_units
 
 
 def harmonic_oscillator_1d(particle):
     """Harmonic oscillator function in one dimension."""
-    k = 100 * constants.ELECTRONVOLT / constants.ANGSTROM**2
+    k = 100 * atomic_units.ELECTRONVOLT / atomic_units.ANGSTROM**2
     return 0.5 * k * particle.x**2
 
 
