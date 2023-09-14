@@ -1,4 +1,4 @@
-"""The streamlit page for the harmonic oscillator potential."""
+"""The streamlit page for the quantum barrier potential."""
 
 from absl import app
 import streamlit as st
@@ -8,12 +8,11 @@ from proton3.audio import utils
 
 
 def main(_):
-    st.set_page_config(page_title="Harmonic Oscillator Potential")
+    st.set_page_config(page_title="Quantum Barrier Potential")
 
-    st.write(
-        "This is the sound of a particle in a harmonic oscillator potential.")
+    st.write("This is the sound of a particle in a quantum barrier potential.")
 
-    particle = utils.get_waferform('quantum_oscillator_1d')
+    particle = utils.get_waferform('quantum_barrier_1d')
 
     number_of_energy_levels = 30
 
