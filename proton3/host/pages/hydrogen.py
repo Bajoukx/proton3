@@ -10,8 +10,13 @@ from proton3.audio import utils
 def main(_):
     st.set_page_config(page_title="Hydrogen Potential")
 
-    st.write(
-        "The sound of the simulation of a hydrogen atom in one dimension.")
+    st.write('''
+            The sound of the simulation of a hydrogen atom in one dimension.
+            
+            The potential of the hydrogen atom can be defined  in one dimension
+            as V(x) = -1/x. This is, of course, a simplification of the
+            potential of the hydrogen atom in three dimensions.
+            ''')
 
     particle = utils.get_waferform('hydrogen_atom_1d')
     number_of_energy_levels = 30

@@ -10,8 +10,14 @@ from proton3.audio import utils
 def main(_):
     st.set_page_config(page_title="Harmonic Oscillator Potential")
 
-    st.write(
-        "This is the sound of a particle in a harmonic oscillator potential.")
+    st.write('''
+            This is the sound of a particle in a harmonic oscillator potential.
+             
+            The potential is defined as V(x) = x^2. It is the analogue of a
+            a mass on a spring in classical mechanics. In it, a particle is
+            able to move freely in space, but is pulled back to the center
+            by the spring.
+            ''')
 
     particle = utils.get_waferform('quantum_oscillator_1d')
 

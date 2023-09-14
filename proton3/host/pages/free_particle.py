@@ -10,7 +10,13 @@ from proton3.audio import utils
 def main(_):
     st.set_page_config(page_title="Free Particle Potential")
 
-    st.write("This is the sound of a particle in a free particle potential.")
+    st.markdown('''
+            This is the sound of a particle in a free particle potential.
+             
+            The potential is defined as V(x) = 0. It is the simplest example
+            of a quantum system, as it is not affected by external forces.
+            In it, a particle is able to move freely in space.
+            ''')
 
     particle = utils.get_waferform('free_particle_1d')
 
